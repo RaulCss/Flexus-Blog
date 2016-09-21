@@ -1,0 +1,341 @@
+@font-face {
+font-family: 'Museo Sans Cyrl 100';
+font-style: normal;
+font-weight: normal;
+src: local('Museo Sans Cyrl 100'), url('../fonts/MuseoSansCyrl.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Lato-Black';
+font-weight: 700;
+src: url('../fonts/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Lato-Bold';
+font-weight: bold;
+src: url('../fonts/Lato-Bold.ttf') format('truetype');
+}
+
+
+@font-face {
+font-family: 'Lato-Reg';
+font-weight: 700;
+src: url('../fonts/Lato-Reg.ttf');
+}
+
+
+@font-face {
+font-family: 'Avenir LT Std 65 Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 65 Medium'), url('../fonts/AvenirLTStd-Medium.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Avenir LT Std 35 Light';
+font-style: normal;
+font-weight: normal;
+src: local('Avenir LT Std 35 Light'), url('../fonts/AvenirLTStd-Light.woff') format('woff');
+}
+
+
+body{
+   margin: 0px;
+  font-size: 16px;
+  color:#4a4a4a;
+}
+
+*{
+  font-family: Lato-Reg;
+  line-height: 1.4;
+    
+  
+}
+
+.flue-color-blue{
+   color: #2eaae1;
+}
+
+.bold{
+  font-family: 'Lato-Bold';
+}
+
+.bg-header{
+   background-image: url(../img/bg-header-2.png);
+/*   height: 100vh;*/
+   background-size: cover;
+   background-repeat: no-repeat;
+/*   background-position-y: -1px;*/
+/*   padding: 150px 0;*/
+   height: 35rem;
+   background-origin: border-box;
+   z-index: -1;
+   overflow: hidden;
+}
+
+.bg-header-second{
+   background-image: url(../img/bg-header-second.png);
+/*   height: 100vh;*/
+   background-size: cover;
+   background-repeat: no-repeat;
+/*   background-position-y: -1px;*/
+/*   padding: 150px 0;*/
+   min-height: 20rem;
+   background-origin: border-box;
+   z-index: -1;
+   overflow: hidden;
+}
+
+.header
+{
+   transition: all 0.25s ease 0s, visibility 0.35s linear;
+   background: linear-gradient(180deg, #ffffff, #bae8fe);
+   background-size: 400% 400%;
+   -webkit-animation: AnimationName 30s ease infinite;
+   -moz-animation: AnimationName 30s ease infinite;
+   animation: AnimationName 30s ease infinite;
+
+   @-webkit-keyframes AnimationName {
+       0%{background-position:0% 50%}
+       50%{background-position:100% 50%}
+       100%{background-position:0% 50%}
+   }
+   @-moz-keyframes AnimationName {
+       0%{background-position:0% 50%}
+       50%{background-position:100% 50%}
+       100%{background-position:0% 50%}
+   }
+   @keyframes AnimationName { 
+       0%{background-position:0% 50%}
+       50%{background-position:100% 50%}
+       100%{background-position:0% 50%}
+   }
+   
+}
+
+.flexus-logo{
+   background-image: url(../img/flexus-logo.svg);
+   width: 150px;
+}
+
+.flexus-title{
+   font-family: 'Avenir LT Std 65 Medium';
+   font-weight: normal;
+   font-size: 170px;
+   font-size: 9rem;
+   color: black;
+   margin: 0;
+   line-height: .9;
+}
+
+.flexus-subtitle{
+   font-family: 'Avenir LT Std 35 Light';
+   font-weight: normal;
+   font-size: 30px;
+   font-size: 1.3rem;
+   color:gray;
+   margin: 0;
+   letter-spacing: 17.5px;
+   letter-spacing: 1.13rem;
+   text-align: end;
+   margin: 0rem 1rem;
+}
+
+.flexus-subtitle-2{
+   font-family: 'Avenir LT Std 35 Light';
+   font-weight: bold;
+   font-size: 30px;
+   font-size: 1.3rem;
+   color:#2eaae1;
+   margin: 0;
+   letter-spacing: 3.5px;
+   letter-spacing: .05rem;
+   margin: 0rem 1rem;
+}
+.main-description {
+   white-space: pre-line;
+   text-align: center;
+   font-size: 28px;
+   font-size: 1.8rem;
+   color: #2eaae1;
+}
+
+.c-blue{
+   color: #2eaae1;
+}
+.flex-header {
+   display: inline-flex;
+   width: 100%;
+   z-index: 1;
+   
+}
+
+.border-home{
+   border:2px solid #0094b9;
+   border-radius: 10px;
+}
+
+.bg-home{
+   background-image: url(../img/bg-home.png);
+   background-size: cover;
+   background-position-y: -6px;
+}
+
+.bg-browser{
+   background-image: url(../img/browser-tools.png);
+   background-size: cover;
+}
+
+.bg-screens {
+/*   background-image: url(../img/bg-screens.png)*/
+}
+
+#box {
+width: 100%;
+    height: 30rem;
+    /* border: 5px black solid; */
+    overflow: hidden;
+    /* background-color: #F2F2F2; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 0;
+}
+#contentContainer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.thing {
+	transition-property: transform;
+	transition-timing-function: ease-in-out;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: rgba(46, 170, 225, 0.18);
+	opacity: .5;
+}
+
+   
+/*
+   header > .icon{
+   display: none;
+   opacity: 0; 
+   } 
+   
+*/
+
+
+
+@media (max-width: 1200px) {
+
+  
+
+}
+
+
+
+@media (max-width: 992px) {
+
+   
+}
+
+
+@media (max-width: 768px) {
+   
+   nav a{
+      font-size: 1.7rem;
+   }
+
+.flex-header{
+   transition: all 0.25s ease 0s, visibility 0.35s linear;
+   background: linear-gradient(180deg, #ffffff, #bae8fe);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 30s ease infinite;
+-moz-animation: AnimationName 30s ease infinite;
+animation: AnimationName 30s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+   
+}
+   
+/*
+.flex-navbar > *{
+   display: none;
+   opacity: 0; 
+}
+*/
+   
+   header{
+      transition: all 0.3s;
+   }
+
+.flex-navbar {
+   justify-content: space-between;
+
+}
+   
+.flex-navbar .flexus{
+/*
+   display: inherit;
+   opacity: 1;
+*/
+   font-size: 2rem;
+}
+   
+header .icon{
+/*
+   display: inherit;
+   opacity: 1;
+*/
+   font-size: 2rem; 
+}
+   
+
+html{
+ font-size: 70%;
+}
+   
+   
+
+   
+}
+@media (max-width: 568px) {
+ html{
+ font-size: 57%;
+}
+  
+   
+}
+.flex-img-thumbnail {
+   min-width: 200px !important;
+    width: 210px !important;
+    height: auto !important;
+    border: 10px solid #f1f1f1;
+    box-shadow: 0px 0px 1px 1px #ddd;
+    margin: 10px;
+    position: relative;
+    align-self: baseline;
+   background: white;
+}

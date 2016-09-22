@@ -8,10 +8,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <!--<link rel="stylesheet" href="css/buttons.css" />-->
 <!--   <link rel="stylesheet" href="css/buttons2.css" />-->
-   <link rel="stylesheet" href="css/colors.css" />
-   <link rel="stylesheet" href="css/Flexus.css" />
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="shortcut icon" href="/favicon.ico" />
+   <link rel="stylesheet" href="assets/css/colors.css" />
+   <link rel="stylesheet" href="assets/css/Flexus.css" />
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="shortcut icon" href="assets/favicon.ico" />
    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 </head>
@@ -54,7 +54,7 @@
          </div>
          <div class="column">
             <div class="flex flex-center">
-               <img src="img/flexus-logo.svg" style="width: 7rem;">
+               <img src="assets/img/flexus-logo.svg" style="width: 7rem;">
                <div class="column">
                   <h1 class="flexus-title">Flexus</h1>
                   <h2 class="flexus-subtitle">FRAMEWORK CSS</h2>
@@ -83,7 +83,7 @@
 -->
          </div>
          <div class="container-image flex-1-1-250 pd-20 center">
-            <img src="img/screens2.svg" style="margin-top: -109px;width: 100%;" class="screens2">
+            <img src="assets/img/screens2.svg" style="margin-top: -109px;width: 100%;" class="screens2">
          </div>
          <p class="flex-0-1-900 pd-x-15 font-24" style="line-height:1.9;">
             
@@ -95,7 +95,7 @@
          <section class="flex-wrap flex-0-1-1250 center pd-20">
             <article class=" flex-0-1-900 around mg-b-20 row-reverse">
                <div class="container-image flex-0-1-200 pd-y-20 center">
-                  <img src="img/clock.svg" style="width: 11rem;">
+                  <img src="assets/img/clock.svg" style="width: 11rem;">
                </div>
                <div class=" flex-0-1-550">
                   <h3 class="c-white text-center mg font-40 bold">Write less, Do more</h3>
@@ -109,7 +109,7 @@
             </article>
             <article class="flex-0-1-900 around mg-y-20">
                <div class="container-image flex-0-1-150 center">
-                  <img src="img/semantic.png" style="width: 11rem;">
+                  <img src="assets/img/semantic.png" style="width: 11rem;">
                </div>
                <div class="column pd-x-20 align-center flex-0-1-550">
                   <h3 class="c-white font-40 mg bold">Semantic</h3>
@@ -224,9 +224,9 @@ function setTransitionDuration(element) {
 	}
 }
 </script>
-   <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
-   <script type="text/javascript" src="js/panel.js"></script>
-   <script type="text/javascript" src="js/navbar.js"></script>
+   <script type="text/javascript" src="assets/js/jquery-1.12.3.min.js"></script>
+   <script type="text/javascript" src="assets/js/panel.js"></script>
+   <script type="text/javascript" src="assets/js/navbar.js"></script>
 <!--
    <script>
    $(document).on('ready', function(){    $modal = $('.modal-frame');    $overlay = $('.modal-overlay');    /* Need this to clear out the keyframe classes so they dont clash with each other between ener/leave. Cheers. */    $modal.bind('webkitAnimationEnd oanimationend msAnimationEnd animationend', function(e){      if($modal.hasClass('state-leave')) {        $modal.removeClass('state-leave');      }    });    $('.close').on('click', function(){      $overlay.removeClass('state-show');      $modal.removeClass('state-appear').addClass('state-leave');    });    $('.open').on('click', function(){      $overlay.addClass('state-show');      $modal.removeClass('state-leave').addClass('state-appear');    });  });

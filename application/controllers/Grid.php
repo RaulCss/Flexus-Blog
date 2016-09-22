@@ -20,6 +20,6 @@ class Grid extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('grid.html');
+		$this->load->view('grid');
 	}
 }

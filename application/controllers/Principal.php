@@ -20,6 +20,6 @@ class principal extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('index-flexus.html');
+		$this->load->view('index-flexus');
 	}
 }

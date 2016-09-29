@@ -76,9 +76,15 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
+<<<<<<< HEAD
+	'username' => 'root',
+	'password' => 'toor',
+	'database' => 'flexus_blog',
+=======
 	'username' => '',
 	'password' => '',
 	'database' => '',
+>>>>>>> 7d3657bdd3846fcf2f80f5a3c9fe9aaf075a23d1
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

@@ -70,7 +70,6 @@ body{
 /*   padding: 150px 0;*/
    height: 35rem;
    background-origin: border-box;
-   z-index: -1;
    overflow: hidden;
 }
 
@@ -83,7 +82,7 @@ body{
 /*   padding: 150px 0;*/
    min-height: 20rem;
    background-origin: border-box;
-   z-index: -1;
+   
    overflow: hidden;
 }
 

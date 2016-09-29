@@ -5,6 +5,9 @@ class principal extends CI_Controller {
 	function __construct()
     {
     	parent :: __construct();
+    	$this->load->helper(array('form', 'url'));
+        $this->load->library('form_validation');
+        $this->load->model('users_model');
     }
 	/**
 	 * Index Page for this controller.
@@ -28,6 +31,31 @@ class principal extends CI_Controller {
 	}
 
 	public function send(){
-		$this->mailer->send();
+		$this->load->view('login');
+	}
+	public function login(){
+
+		//set rules | nombre del campo, nombre de la variable, reglas
+		$this->form_validation->set_rules("email", "Email", "trim|required");
+		$this->form_validation->set_rules("password", "Password", "trim|required");
+
+
+		if (! $this->form_validation->run())
+		{
+			echo "error";
+		}
+		$email = $this->input->post('email');
+		$password = $this->input->post('password');
+		
+		$user=$this->users_model->login($email,$password); 
+		if($user['success']){
+			$sessionData=array('username'=>$user['data']['nombre_usuario'],'email'=>$user['data']['email']);
+			redirect('/');
+		}
+		else {
+			redirect('/');
+		}
+
+
 	}
 }

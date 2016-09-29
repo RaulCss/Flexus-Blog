@@ -52,7 +52,7 @@ class principal extends CI_Controller {
 		if($user['success']==TRUE){
 
 			$sessionData=array('username'=>$user['data']['nombre_usuario'],'email'=>$user['data']['email']);
-			echo "entro";
+			$this->load->view('inicio');
 		}
 		else {
 			echo "no entro";

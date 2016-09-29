@@ -48,10 +48,10 @@ class principal extends CI_Controller {
 		$password = $this->input->post('password');
 		
 		$user= $this->users_model->__login_user($email,$password); 
-		//var_dump($user);
+		//print_r($user['data'][0]->nombre_usuario);
 		if($user['success']==TRUE){
 
-			$sessionData=array('username'=>$user['data']['nombre_usuario'],'email'=>$user['data']['email']);
+			$sessionData=array('username'=>$user['data'][0]->nombre_usuario,'email'=>$user['data'][0]->email);
 			$this->load->view('inicio');
 		}
 		else {

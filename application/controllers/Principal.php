@@ -47,13 +47,15 @@ class principal extends CI_Controller {
 		$email = $this->input->post('email');
 		$password = $this->input->post('password');
 		
-		$user=$this->users_model->login($email,$password); 
-		if($user['success']){
+		$user= $this->users_model->__login_user($email,$password); 
+		//var_dump($user);
+		if($user['success']==TRUE){
+
 			$sessionData=array('username'=>$user['data']['nombre_usuario'],'email'=>$user['data']['email']);
-			redirect('/');
+			echo "entro";
 		}
 		else {
-			redirect('/');
+			echo "no entro";
 		}
 
 

@@ -25,15 +25,18 @@ class Users_model extends CI_Model
 	}
 	public function __login_user($email, $password)
 	{
-		$users=$this->db->query("select * from usuario where email=$email")->result();
+		$users= $this->db->query("select * from usuario where email='$email'")->result();
+		
 		foreach($users as $user){
 			$pass=$user->password;
 		}
-		if (password_verify($pass, $password)){
+
+		if (password_verify($password, $pass)){
 			$array = array('success'=>TRUE, 'data' => $users);
 		}else{
 			$array = array('success'=>FALSE, 'data' => '');
 		}
+		//var_dump(password_verify($password, $pass));
 		return $array;
 	}
 }

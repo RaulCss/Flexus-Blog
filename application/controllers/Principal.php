@@ -34,7 +34,9 @@ class principal extends CI_Controller {
 		$this->load->view('login');
 	}
 	public function login(){
+		if(!$this->session->userdata('username')){
 
+		
 		//set rules | nombre del campo, nombre de la variable, reglas
 		$this->form_validation->set_rules("email", "Email", "trim|required");
 		$this->form_validation->set_rules("password", "Password", "trim|required");
@@ -52,12 +54,15 @@ class principal extends CI_Controller {
 		if($user['success']==TRUE){
 
 			$sessionData=array('username'=>$user['data'][0]->nombre_usuario,'email'=>$user['data'][0]->email);
+			$this->session->set_userdata($sessionData);
 			$this->load->view('inicio');
 		}
 		else {
 			echo "no entro";
 		}
-
+	}else{
+		$this->load->view('inicio');
+	}
 
 	}
 }
